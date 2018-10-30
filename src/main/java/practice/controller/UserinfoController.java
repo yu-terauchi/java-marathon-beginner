@@ -18,7 +18,7 @@ public class UserinfoController {
 
 	/**
 	 * フォーム画面へ
-	 * @return
+	 * @return　　
 	 */
 	@RequestMapping("/toInput")
 	public String toInput() {
@@ -28,12 +28,13 @@ public class UserinfoController {
 	
 	/**
 	 * 
-	 * フォームで入力された値を受け取り、スコープに格納してフォワード
-	 * @param model
-	 * @param name
-	 * @param age
-	 * @param address
-	 * @return
+	 * フォームで入力された値を受け取り、スコープに格納してフォワード.
+	 * 
+	 * @param model　モデル
+	 * @param name　リクエストパラメータとしてフォームから送られてくる「名前」情報
+	 * @param age　リクエストパラメータとしてフォームから送られてくる「年齢」情報
+	 * @param address　リクエストパラメータとしてフォームから送られてくる「住所」情報
+	 * @return　userオブジェクトのスコープ参照情報
 	 */
 	@RequestMapping("/toOutput")
 	public String toOutput(Model model,String name,String age,String address) {
@@ -43,9 +44,7 @@ public class UserinfoController {
 		user.setAge(Integer.parseInt(age));
 		user.setAddress(address);
 		
-		model.addAttribute("name",name);
-		model.addAttribute("age",age);
-		model.addAttribute("address",address);
+		model.addAttribute("user",user);
 		
 		System.out.println("outputuserinfoへ飛びます");//経過確認用出力
 		return "5km/outputuserinfo";

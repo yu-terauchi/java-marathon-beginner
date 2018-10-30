@@ -1,9 +1,17 @@
 package practice.domain;
 
+/**
+ * ユーザ情報を表すドメイン.
+ * 
+ * @author yu.terauchi
+ *
+ */
 public class User {
-
+	/** 名前 */
 	private String name;
+	/** 年齢 */
 	private Integer age;
+	/** 住所 */
 	private String address;
 
 	@Override

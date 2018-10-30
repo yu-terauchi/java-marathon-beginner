@@ -4,15 +4,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * リクエストを受け取るコントローラ.
+ * 
+ * @author yu.terauchi
+ *
+ */
 @Controller
 @RequestMapping("/nameReceive")
 public class nameReceiveController {
 
 	/**
+	 * 入力フォームへ入力画面を表示する.
 	 * 
-	 * 入力画面を表示する
-	 * 
-	 * @return
+	 * @return 入力画面
 	 */
 	@RequestMapping("/toInput")
 	public String toInput() {
@@ -21,9 +26,11 @@ public class nameReceiveController {
 	}
 
 	/**
-	 * フォームで入力された名前を直接出力画面へ
-	 * @param name
-	 * @return
+	 * フォームで入力された名前を直接出力画面へ表示する.
+	 * 
+	 * @param name リクエストパラメータで送られてくる名前
+	 * @param model モデル
+	 * @return　出力画面
 	 */
 	@RequestMapping("/toOutput")
 	public String toOutput(String name,Model model) {
