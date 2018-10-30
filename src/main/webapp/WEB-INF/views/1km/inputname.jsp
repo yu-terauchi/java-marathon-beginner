@@ -6,7 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="" method="POST">
+<form action="/nameReceive/index" method="POST">
 <label for="name">名前:</label>
 <input type="text" name="name" id=name>
 
