@@ -6,12 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/nameReceive/toOutput" method="POST">
 
-<label for="name">名前:</label><br>
-<input type="text" name="name" id="name">
-
-<input type="submit" value="送信">
-</form>
 </body>
 </html>

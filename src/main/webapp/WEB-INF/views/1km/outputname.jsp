@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <!DOCTYPE html>
 <html>
@@ -11,7 +10,7 @@
 <body>
 <h2>ようこそ</h2>
 <h2>
-<c:out value="${inputname}"/>
+	<c:out value="${name}"/>
 さん
 </h2>
 
