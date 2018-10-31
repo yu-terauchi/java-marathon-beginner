@@ -6,7 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/register/toOutput" method="POST">
+<form action="${pageContext.request.contextPath}/register/toOutput" method="POST">
 
 	<label for="1">商品1:</label>
 		<input type="text" name="goods1" id="1">円<br>

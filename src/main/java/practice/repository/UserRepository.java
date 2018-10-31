@@ -10,7 +10,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import practice.domain.UserInfo;
 
-/**DBにアクセスするリポジトリクラス.
+/**
+ * usersテーブルを操作するリポジトリクラス.
  * 
  * @author yu.terauchi
  *

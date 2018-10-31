@@ -6,7 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/search/toDaoToOutput" method="POST">
+	<form action="${pageContext.request.contextPath}/search/toDaoToOutput" method="POST">
 		<label for="id">ID:</label>
 		<input type="text" name="id" id="id"><br>
 		
